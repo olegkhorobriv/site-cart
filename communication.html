@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="styles/stile.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link id="light-theme" rel="stylesheet" href="styles/light-theme.css">
+    <link id="dark-theme" rel="stylesheet" href="styles/dark-theme.css" disabled>
+    <title>Звязок</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_inner-left">
+                    <div class="dark_moon">
+                        <button id="theme-toggle" aria-label="Toggle Theme" class="icon-tem">
+                            <span class="sun-icon">&#9728;</span>
+                            <span class="moon-icon">&#9790;</span>
+                        </button>
+                    </div>
+    
+                </div>
+                <nav class="nav">
+                    <div class="navbar-menu">
+                        <ul class="menu-list">
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Технології</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="burger-menu">
+                        <div class="burger-icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+    
+                    </div>
+                </nav>
+    
+            </div>
+    
+    
+    
+        </div>
+    </header>
+
+
+
+<section class="contact">
+    <div class="content">
+        <h2>Contact US</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi est expedita, harum quasi quia temporibus! Hic minus omnis quam voluptatem.</p>
+    </div>
+    <div class="containerCom">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>Львів. Львівська область</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+380679765731" >+380679765731</a></p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><ion-icon name="mail-outline"></ion-icon></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p><a href="mailto:zuravskijoleg.work@gmail.com" >zuravskijoleg.work@gmail.com</a></p>
+                </div>
+            </div>
+            <h2 class="txt">Connect with us</h2>
+            <ul class="sci">
+                <li>
+
+                    <a href="https://t.me/oleg1998res"><ion-icon name="paper-plane-outline"></ion-icon></a>
+                    <a href="https://instagram.com/_o_l_e_q_?igshid=YzcxN2Q2NzY0OA=="><ion-icon name="logo-instagram"></ion-icon></a>
+
+                </li>
+            </ul>
+
+        </div>
+        <div class="contactForm">
+            <form action="" method="post">
+                <h2>Send Message</h2>
+                <div class="inputBox">
+                    <input name="name" type="text" required="required">
+                    <span>Full Name</span>
+                </div>
+
+                <div class="inputBox">
+                    <input name="email" type="text" required="required">
+                    <span>Email</span>
+                </div>
+
+                <div class="inputBox">
+                    <textarea name="text" required="required"></textarea>
+                    <span>Type your message....</span>
+                </div>
+                <div class="inputBox">
+                    <input name="submit" type="submit" value="Send">
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<footer class="footer">
+
+
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer_nav">
+                <ul>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Інструменти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li class="header__inner-aicon"><a href="https://t.me/oleg1998res"><img
+                                src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_info">
+            <span>Всі права захищено 2024</span>
+        </div>
+    </div>
+</footer>
+<script>
+    let yes;
+    const burgerIcon = document.querySelector('.burger-icon');
+    const menuList = document.querySelector('.menu-list');
+    const slider = document.querySelector('.slider');
+
+    burgerIcon.addEventListener('click', () => {
+        menuList.classList.toggle('active');
+
+    });
+
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

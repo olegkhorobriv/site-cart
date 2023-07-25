@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <link href="styles/stile.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/media.css">
+    <link id="light-theme" rel="stylesheet" href="styles/light-theme.css">
+    <link id="dark-theme" rel="stylesheet" href="styles/dark-theme.css" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <title>Проекти</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_inner-left">
+                    <div class="dark_moon">
+                        <button id="theme-toggle" aria-label="Toggle Theme" class="icon-tem">
+                            <span class="sun-icon">&#9728;</span>
+                            <span class="moon-icon">&#9790;</span>
+                        </button>
+                    </div>
+    
+                </div>
+                <nav class="nav">
+                    <div class="navbar-menu">
+                        <ul class="menu-list">
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Технології</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="burger-menu">
+                        <div class="burger-icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+    
+                    </div>
+                </nav>
+    
+            </div>
+    
+    
+    
+        </div>
+    </header>
+
+<section class="content">
+    <div class="container">
+        <div class="content_title">Трохи про мої роботи</div>
+
+
+
+
+
+
+        <div class="content-info">
+            Наступна моя робота це туристичний сайт міста. За допомогою цього сайту я захистив диплом.
+            Пропоную розглянути:
+            <div class="content-box">
+
+                <div class="content-box-text">
+                    Сайт було розроблено з нуля: дизайн, верстка, коктент і тд. Він був написаний на HTML5, CSS3, Sass JavaScript,jQuery.
+                    На сайті присутні слайдери, присутня фільтрація, також сайт був підсаджений на <a href="https://ru.wordpress.org/">WordPress</a>. Для зручності і красоти створено безліч слайдерів.
+                    <div class="popup-gallery">
+                        <a href="static/images/lytscslider.png" title="The Cleaner">Переглянути</a>
+                    </div>
+                    Для створення слайдера було використано бібліотеку JavaScript, а саме jQuery (<a href="https://kenwheeler.github.io/slick/">slick slider</a>).
+                    Також на сторінці присутня фільтрація, для її написання використав <a href="https://www.kunkalabs.com/mixitup/">MixItUp 3</a>. <br>
+                    Сайт кросбраузерний, багатосторінковий.  <br>
+                    Сайт адаптований під мобільні пристрої, для цього було створено бургер-меню, для його написання використано JavaScript.
+                    <div class="popup-gallery">
+                        <a href="static/images/lytscburger.png" title="The Cleaner">Переглянути</a> <br>
+                        <a href="static/images/lutscJS.png" title="The Cleaner">JS</a>
+                    </div>
+                    <br>
+                    Висновок. Мій перший вагомий проект. Вньому задіяв всі свої вміння на той час і він дав вагомий поштовх.
+                </div>
+
+                <div class="popup-gallery">
+                    <a href="static/images/lutscfull.png" title="The Cleaner"><img src="static/images/lytsctitle.png" alt="" align="left"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="git__title">Перегляньте мій проекти за посиланням нижче:</p>
+        <a href="http://n67976jy.beget.tech" target="_blank" class="git">Переглянути</a>
+
+
+
+
+
+
+    </div>
+</section>
+
+<footer class="footer">
+
+
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer_nav">
+                <ul>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Інструменти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li class="header__inner-aicon"><a href="https://t.me/oleg1998res"><img
+                                src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_info">
+            <span>Всі права захищено 2024</span>
+        </div>
+    </div>
+</footer>
+<script>
+    let yes;
+    const burgerIcon = document.querySelector('.burger-icon');
+    const menuList = document.querySelector('.menu-list');
+    const slider = document.querySelector('.slider');
+
+    burgerIcon.addEventListener('click', () => {
+        menuList.classList.toggle('active');
+
+    });
+
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/theme.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>

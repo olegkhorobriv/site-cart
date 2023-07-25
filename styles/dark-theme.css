@@ -1,0 +1,39 @@
+body {
+    background-color: #333;
+    color: #fff;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+.sun-icon,
+.moon-icon {
+    padding-top: 8px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 27px;
+
+
+}
+
+.sun-icon {
+    color: #f5c33b;
+}
+
+.moon-icon {
+    color: #ccc;
+}
+.icon-tem{
+    border-radius: 56px;
+    background-color: #333;
+}
+.footer{
+    background-color: #222;
+}
+.text p a{
+    color: white;
+}

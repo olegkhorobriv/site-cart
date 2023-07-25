@@ -1,0 +1,70 @@
+.my{
+    margin-top: 80px;
+}
+.my__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.my__inner-content{
+    width: 470px;
+}
+.my__inner-content p{
+    font-size: 32px;
+    font-weight: 700;
+}
+.line-box{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.line{
+    margin-top: 12px;
+    width: 40px;
+    height: 2px;
+
+}
+.text{
+    font-size: 18px;
+}
+.my__inner-content a{
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 26px;
+    font-weight: 700;
+
+    color: white;
+}
+.my__inner-img{
+    padding-right: 80px;
+    width: 450px;
+    height: 400px;
+}
+/*Частина сайту про мене*/
+.description-title{
+    margin-top: 90px;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+.description__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.description__inner-box{
+    width: 550px;
+}
+.description__inner-box span{
+    color: red;
+}
+.description__inner-box a{
+    color: blue;
+}
+.description__inner-course{
+    width: 45%;
+
+}
+.my__inner-img img{
+    height: 400px;
+}

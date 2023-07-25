@@ -1,0 +1,159 @@
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list li {
+    margin-right: 20px;
+}
+
+.menu-list li:last-child {
+    margin-right: 0;
+}
+
+.menu-list li a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+.burger-menu {
+    cursor: pointer;
+    display: none;
+    margin-top: 10px;
+}
+
+.burger-icon .line{
+
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+.menu-list.active {
+    position: absolute;
+    z-index: 999;
+}
+/*start Media*/
+@media (max-width: 1100px) {
+    .content-box{
+        flex-wrap: wrap;
+    }
+    .content-box-text{
+        width: 100%;
+    }
+    .content-info img {
+        padding: 0;
+        height: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav ul li a {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+    .navigator ul li a{
+        font-size: 18px;
+        padding: 5px 5px;
+    }
+    .title{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header{
+        padding: 10px;
+    }
+    .header_inner-left {
+        margin-top: 0;
+    }
+    .header_inner{
+        padding: 0;
+    }
+    .menu-list {
+
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-list.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+    .description__inner{
+        flex-wrap: wrap;
+    }
+    .description__inner-course{
+        width: 100%;
+    }
+    .description__inner-box{
+        width: 100%;
+    }
+    .my__inner{
+
+        flex-wrap: wrap;
+    }
+    .my__inner-img{
+        margin-top: 20px;
+    }
+
+}
+@media screen  and (max-width: 850px){
+    .footer_nav ul {
+        list-style: none;
+    }
+}
+@media screen  and (max-width: 710px){
+    .footer_nav ul {
+        list-style: none;
+    }
+    .navigator ul{
+        padding-top: 60px;
+    }
+    .navigator ul li {
+        margin-top: 25px;
+        font-size: 34px;
+        display: list-item;
+    }
+}
+@media screen  and (max-width: 650px){
+    .description__flex{
+        flex-wrap: wrap;
+    }
+}
+@media screen  and (max-width: 600px){
+    .content_inner{
+        flex-wrap: wrap;
+    }
+    .content_inner img{
+        margin-left: 55px;
+    }
+}
+
+

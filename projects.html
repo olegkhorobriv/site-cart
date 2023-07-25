@@ -1,0 +1,188 @@
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+              name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <link href="https://fonts.googleapis.com/css?family=Spectral:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+        <link href="styles/stile.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/slider.css">
+        <link rel="stylesheet" href="styles/media.css">
+        <link id="light-theme" rel="stylesheet" href="styles/light-theme.css">
+        <link id="dark-theme" rel="stylesheet" href="styles/dark-theme.css" disabled>
+
+        <title>Проекти</title>
+
+    </head>
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <div class="header_inner-left">
+                        <div class="dark_moon">
+                            <button id="theme-toggle" aria-label="Toggle Theme" class="icon-tem">
+                                <span class="sun-icon">&#9728;</span>
+                                <span class="moon-icon">&#9790;</span>
+                            </button>
+                        </div>
+        
+                    </div>
+                    <nav class="nav">
+                        <div class="navbar-menu">
+                            <ul class="menu-list">
+                                <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                                <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                                <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Технології</a></li>
+                                <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="burger-menu">
+                            <div class="burger-icon">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+        
+                        </div>
+                    </nav>
+        
+                </div>
+        
+        
+        
+            </div>
+        </header>
+        
+
+<section class="slider">
+    <div class="gallery swiper mySwiper">
+        <div class="gallery_list swiper-wrapper">
+
+            <div class="gallery_item swiper-slide">
+                <img src="static/images/modernosmoll.png" alt="alt">
+                <div class="text">
+                    <h3 class="title_slider">
+                        Модерно (перший сайт)
+                    </h3>
+                    <p>HTML5, CSS3, jQuery, slick slider, MixItUp 3, JavaScript </p>
+                    <a href="projects-moderno.html">Переглянути</a>
+                </div>
+            </div>
+
+            <div class="gallery_item swiper-slide">
+                <img src="static/images/lytsctitle.png" alt="alt">
+                <div class="text">
+                    <h3 class="title_slider">
+                        Мій Луцьк
+                    </h3>
+                    <p>HTML5, CSS3, jQuery, slick slider, MixItUp 3, JavaScript, WordPress</p>
+                    <a href="projects-lytsc.html">Переглянути</a>
+                </div>
+            </div>
+
+            <div class="gallery_item swiper-slide">
+                <img src="static/images/course.png" alt="alt">
+                <div class="text">
+                    <h3 class="title_slider">
+                        Навчальний сайт з пройденого курсу
+                    </h3>
+                    <p>PHP, mysql</p>
+                    <a href="projects-course.html">Переглянути</a>
+                </div>
+            </div>
+            <div class="gallery_item swiper-slide">
+                <img src="static/images/rarifull.png" alt="alt">
+                <div class="text">
+                    <h3 class="title_slider">
+                        Інтернет магазин одягу
+                    </h3>
+                    <p>PHP, mysql, HTML5, CSS3, jQuery, slick slider, MixItUp 3, JavaScript</p>
+                    <a href="projects-rari.html">Переглянути</a>
+                </div>
+            </div>
+            <div class="gallery_item swiper-slide">
+                <img src="static/images/marcho.png" alt="alt">
+                <div class="text">
+                    <h3 class="title_slider">
+                        Інтернет магазин одягу
+                    </h3>
+                    <p>PHP, mysql, HTML5, CSS3, jQuery, slider, JavaScript, Bootstrap</p>
+                    <a href="projects-marcho.html">Переглянути</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+
+
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer_nav">
+                <ul>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Інструменти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li class="header__inner-aicon"><a href="https://t.me/oleg1998res"><img
+                                src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_info">
+            <span>Всі права захищено 2024</span>
+        </div>
+    </div>
+</footer>
+<script>
+    let yes;
+    const burgerIcon = document.querySelector('.burger-icon');
+    const menuList = document.querySelector('.menu-list');
+    const slider = document.querySelector('.slider');
+
+    burgerIcon.addEventListener('click', () => {
+        menuList.classList.toggle('active');
+
+    });
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/theme.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+        loop: true
+    });
+</script>
+</body>
+</html>

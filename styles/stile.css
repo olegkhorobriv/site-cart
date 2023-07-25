@@ -1,0 +1,366 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+
+img{
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #546e7a;
+    border: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.background{
+height: 99.9vh;
+
+}
+.title{
+    font-weight: 700;
+    font-size: 46px;
+    position: absolute;
+    color: #6DA9FD;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.navigator{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.navigator ul li{
+
+    display: inline;
+    margin-left: 35px;
+
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.button__line{
+    position: absolute;
+    display: block;
+}
+.button__line--top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg, transparent, #2196f3);
+}
+.button:hover .button__line--top{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+.button__line--bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg, transparent, #2196f3);
+}
+.button:hover .button__line--bottom{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+.button__line--left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(0deg, transparent, #2196f3);
+}
+.button:hover .button__line--left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+.button__line--right{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg, transparent, #2196f3);
+}
+.button:hover .button__line--right{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s;
+}
+
+
+
+.button:hover{
+    /*box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;*/
+    transition-delay: 1s;
+    background-color: #2196f3;
+    color: black;
+}
+
+
+/*/////////////////////////////////////////*/
+.container{
+    max-width: 1175px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav ul li{
+
+    display: inline;
+    margin-left: 15px;
+
+}
+.nav__inner-my a{
+    margin-top: 15px;
+    font-size: 19px;
+}
+.button__color:hover{
+    transition-delay: 0.2s;
+}
+.header_inner{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_inner-left{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages{
+    padding-top: 10px;
+    font-size: 30px;
+    color: red;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.languages a{
+    color: #2196f3;
+
+}
+.languages a:hover{
+    color: #D43328;
+}
+.login{
+    font-size: 30px;
+    margin-top: 10px;
+    color: #2196f3;;
+}
+.login:hover{
+    color: #D43328;
+
+
+}
+
+.description__inner-work{
+
+    font-size:  18px;
+    color: red;
+
+}
+.description__inner-flex{
+
+    margin-top: 25px;
+}
+.description__inner-flex ul{
+    margin-top: 20px;
+}
+
+.description__inner-flex ul li{
+    margin-top: 10px;
+    font-size: 16px;
+}
+.description__inner-flex ul li:hover{
+    color: #2196f3;
+}
+.description__flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_title{
+    margin: 50px 0 40px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+/*///////////////////////////*/
+.footer{
+   padding-bottom: 10px;
+    margin-top: 80px;
+    border-top: 1px solid #787878;
+}
+.footer__inner{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav ul li{
+    display: inline;
+}
+.footer_button{
+    font-size: 16px;
+}
+.contact ul li a{
+    margin-top: 18px;
+    width: 35px;
+    height: 35px;
+}
+.footer_info{
+    color: #333333;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+/*/////////////////////////*/
+
+/*.content-info{*/
+/*   */
+/*}*/
+.content-box{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-info img{
+    padding: 15px;
+    width: auto;
+    height: 350px;
+    object-fit: cover
+
+}
+.content-box-text{
+    max-width: 700px;
+}
+.content-info{
+    margin-top: 45px;
+}
+/*///////////////////////////*/
+.content_inner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.content_inner img{
+    width: 200px;
+    height: 200px;
+}
+.content_inner-box{
+    margin: 0 55px;
+
+}
+.tools-name{
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: 700;
+    border-bottom: 1px solid ;
+}
+
+/*//////////////////////////*/
+
+.content-communication{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.content-communication ul{
+    margin-top: 45px;
+}
+.content-communication ul li{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.content-communication ul li span{
+    color: #2196f3;
+    font-weight: 700;
+    margin-right: 15px;
+}
+/*//////////////////////////////////////*/
+.git{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.git:hover{
+    background-color: #555;
+}
+
+
+/*.popup-gallery {*/
+/*    width: 400px; !* Задаємо фіксовану ширину контейнера *!*/
+/*    height: 300px; !* Задаємо фіксовану висоту контейнера *!*/
+/*    overflow: auto; !* Включаємо прокручування, якщо зображення виходить за межі контейнера *!*/
+/*}*/
+/*.popup-gallery img {*/
+/*    width: 100%; !* Забезпечуємо респонсивний розмір зображення *!*/
+/*    height: auto; !* Забезпечуємо респонсивний розмір зображення *!*/
+/*    display: block; !* Встановлюємо зображення як блочний елемент *!*/
+/*}*/

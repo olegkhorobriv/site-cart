@@ -1,0 +1,160 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css?family=Spectral:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <link href="styles/stile.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/media.css">
+    <link id="light-theme" rel="stylesheet" href="styles/light-theme.css">
+    <link id="dark-theme" rel="stylesheet" href="styles/dark-theme.css" disabled>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <title>Проекти</title>
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="header_inner-left">
+                    <div class="dark_moon">
+                        <button id="theme-toggle" aria-label="Toggle Theme" class="icon-tem">
+                            <span class="sun-icon">&#9728;</span>
+                            <span class="moon-icon">&#9790;</span>
+                        </button>
+                    </div>
+    
+                </div>
+                <nav class="nav">
+                    <div class="navbar-menu">
+                        <ul class="menu-list">
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Технології</a></li>
+                            <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="burger-menu">
+                        <div class="burger-icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+    
+                    </div>
+                </nav>
+    
+            </div>
+    
+    
+    
+        </div>
+    </header>
+
+<section class="content">
+    <div class="container">
+        <div class="content_title">Трохи про мої роботи</div>
+
+
+        <div class="content-info">
+            Це інтернет магазин. Я його створював для прокачки своїх навичків.
+            <div class="content-box">
+                <div class="popup-gallery">
+                    <a href="static/images/marchoFull.png" data-lightbox="gallery" data-title="The Cleaner">
+                        <img src="static/images/marcho.png" alt="" align="left">
+                    </a>
+                </div>
+
+                <div class="content-box-text">
+                    Тут є все PHP, mysql, HTML5, CSS3, jQuery, slider, JavaScript, Bootstrap.
+                    <br>
+                    На сайті є персональний кабінет для перегляду своїх замовлень, коментарів і свій профіль.
+                    <div class="popup-gallery">
+                        <a href="static/images/marchoHome.png" data-lightbox="gallery" data-title="The Cleaner">Переглянути</a>
+                    </div>
+                    На сторінці з товарами створено сортування товарів по ціні, кольорі, розмірах , категоріях і тегах, також присутня пагінація.
+                    <div class="popup-gallery">
+                        <a href="static/images/marcho-shop.png" title="The Cleaner">Переглянути</a>
+                    </div>
+                    Сторінка з товаром. На ній було створено оцінку товару , коментарі і можливість додати товар в корзину з вибором відповідного розміру, кольору і кількості, також рекомендованими товарами.
+                    <div class="popup-gallery">
+                        <a href="static/images/marcho-products.png" title="The Cleaner">Переглянути</a>
+                    </div>
+                    Корзина і підвердження товару.
+                    <div class="popup-gallery">
+                        <a href="static/images/marcho-basket.png" title="The Cleaner">Переглянути</a>
+                    </div>
+                    <br>  <br>
+                    Висновок. Цікавий проект в якому я старався більше прокачати свої навчики і використовувати нові технології.
+
+                </div>
+            </div>
+
+        </div>
+        <p class="git__title">Перегляньте мій проекти на GitHub за посиланням нижче:</p>
+        <a href="https://github.com/olegkhorobriv/marcho03.git" target="_blank" class="git">GitHub</a>
+
+
+
+
+    </div>
+</section>
+
+<footer class="footer">
+
+
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer_nav">
+                <ul>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="my.html">Про мене</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="projects.html">Проекти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="tools.html">Інструменти</a></li>
+                    <li class="nav__inner nav__inner-my"><a class="button button__color" href="communication.html">Звязок</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <li class="header__inner-aicon"><a href="https://t.me/oleg1998res"><img
+                                src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt=""></a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_info">
+            <span>Всі права захищено 2024</span>
+        </div>
+    </div>
+</footer>
+<script>
+    let yes;
+    const burgerIcon = document.querySelector('.burger-icon');
+    const menuList = document.querySelector('.menu-list');
+    const slider = document.querySelector('.slider');
+
+    burgerIcon.addEventListener('click', () => {
+        menuList.classList.toggle('active');
+
+    });
+
+</script>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/theme.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+</body>
+</html>
